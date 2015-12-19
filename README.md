@@ -1,4 +1,4 @@
-rouge-lexers-docker
+Rouge::Lexers::Docker
 ===================
 
 * [Homepage](https://rubygems.org/gems/rouge-lexers-docker)
