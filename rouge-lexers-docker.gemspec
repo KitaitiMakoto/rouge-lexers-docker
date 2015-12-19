@@ -2,11 +2,10 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rouge/lexers/docker/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "rouge-lexers-docker"
-  gem.version       = Rouge::Lexers::Docker::VERSION
+  gem.version       = "0.1.0"
   gem.summary       = %q{Rouge lexer for Dockerfiles}
   gem.description   = %q{Parses and markups Dockerfiles.}
   gem.license       = "LGPL"
