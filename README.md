@@ -18,10 +18,27 @@ Parses and markups Dockerfiles.
 Examples
 --------
 
+    require 'rouge'
     require 'rouge/lexers/docker'
+    
+    dockerfile = ARGV.shift
+    abort 'USAGE: ruby rougify-dockerfile.rb DOCKERFILE' unless dockerfile
+    
+    content = File.read(dockerfile)
+    lexer = Rouge::Lexers::Docker.new
+    lexed = lexer.lex(content)
+    
+    formatter = Rouge::Formatters::Terminal256.new
+    # or formatter = Rouge::Formatters::HTML.new(wrap: false)
+    highlighted = formatter.format(lexed)
+    print highlighted
 
 Requirements
 ------------
+
+[Rouge][] gem.
+
+[Rouge]: https://github.com/jneen/rouge
 
 Install
 -------
