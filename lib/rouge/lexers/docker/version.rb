@@ -14,10 +14,11 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with rouge-lexers-docker.  If not, see <http://www.gnu.org/licenses/>.
 #
+require_relative '../docker'
 
 module Rouge
   module Lexers
-    module Docker
+    class Docker < RegexLexer
       # rouge-lexers-docker version
       VERSION = "0.1.0"
     end
