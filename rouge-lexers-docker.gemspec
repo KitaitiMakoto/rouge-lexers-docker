@@ -7,8 +7,8 @@ require 'rouge/lexers/docker/version'
 Gem::Specification.new do |gem|
   gem.name          = "rouge-lexers-docker"
   gem.version       = Rouge::Lexers::Docker::VERSION
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
+  gem.summary       = %q{Rouge lexer for Dockerfiles}
+  gem.description   = %q{Parses and markups Dockerfiles.}
   gem.license       = "LGPL"
   gem.authors       = ["KITAITI Makoto"]
   gem.email         = "KitaitiMakoto@gmail.com"

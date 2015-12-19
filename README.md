@@ -8,10 +8,12 @@ Rouge::Lexers::Docker
 Description
 -----------
 
-TODO: Description
+Rouge lexer for Dockerfiles.
 
 Features
 --------
+
+Parses and markups Dockerfiles.
 
 Examples
 --------
